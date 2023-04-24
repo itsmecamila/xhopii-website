@@ -1,0 +1,200 @@
+/* Button */
+.btn {
+  padding: 8px;
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.btn-lg {
+  font-size: 22px;
+}
+
+.btn-ghost {
+  border: none;
+  background-color: transparent;
+}
+
+.btn-primary {
+  color: white;
+  background-color: orangered;
+}
+
+.btn-secundary {
+  border: 2px solid #d4d4d8;
+
+  color: black;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-icon > svg {
+  width: 20px;
+}
+
+/* Input */
+.input {
+  padding: 12px 16px;
+  border: 2px solid #d4d4d8;
+}
+
+/* Logo da Xhopii */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.logo strong {
+  font-size: 30px;
+  color: orangered;
+}
+
+.logo.logo--secundary strong {
+  color: white;
+}
+
+/* Separator */
+
+.separator {
+  position: relative;
+
+  border: none;
+  border-top: 2px solid #d4d4d8;
+}
+
+.separator.separator-or::before {
+  position: absolute;
+  display: inline-block;
+  content: "OU";
+  left: 50%;
+  padding: 0 4px;
+
+  translate: -50% -50%;
+
+  color: #52525b;
+  background-color: white;
+  z-index: 10;
+}
+
+/* Header */
+.header:not(.header--unsigned) {
+  background-color: orangered;
+}
+
+.header.header--unsigned {
+  background-color: #fafafa;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header:not(.header--unsigned) .header__content {
+  padding: 8px 24px;
+}
+.header.header--unsigned .header__content {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.header__content--left,
+.header__content--right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__right--help {
+  color: orangered;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  justify-content: center;
+
+  background-color: darkorange;
+}
+
+.nav .nav__links a {
+  display: inline-block;
+  padding: 16px;
+
+  color: white;
+}
+
+.nav .nav__links a:hover {
+  filter: brightness(0.9);
+}
+
+/* Footer */
+.footer {
+  padding: 50px 0;
+  background-color: #fafafa;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  margin: 0 auto;
+
+  width: 1250px;
+}
+
+.footer__links {
+  /* display: flex;
+	justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footer__links--column h4 {
+  text-transform: uppercase;
+}
+
+.footer__links--column .footer__links--list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+.footer__links--column .footer__links--list a {
+  color: #3f3f46;
+}
+
+.footer__links--column .footer__links--list a:hover {
+  text-decoration: underline;
+}
+
+.footer__links--column .footer__links--list img {
+  max-width: 110px;
+}
+
+.footer__copyright {
+  color: #27272a;
+  text-align: center;
+}
