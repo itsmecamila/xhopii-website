@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/pages/produto-selecionado.css" />
+
+    <!-- <link rel="stylesheet" href="./public/styles/styles.css" /> -->
+
+    <title>Xhopii</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <section class="header__content">
+        <section class="header__content--left">
+          <div class="logo logo--secundary">
+            <img src="./img/logo.png" alt="Logo da Xhopii" class="logo" />
+            <strong>Xhopii</strong>
+          </div>
+          <!-- <button class="btn btn-ghost btn-lg">Entre</button> -->
+        </section>
+
+        <section class="header__content--right">
+          <a href="#" class="header__right--help">Precisa de ajuda?</a>
+        </section>
+      </section>
+
+      <nav class="nav">
+        <section class="nav__links">
+          <a href="./home.html">Home</a>
+          <a href="./cadastro-cliente.html">Cadastro Cliente</a>
+          <a href="./cadastro-funcionario.html">Cadastro Funcionário</a>
+          <a href="./cadastro-produto.html">Cadastro Produto</a>
+          <a href="./ver-clientes.html">Ver Clientes</a>
+          <a href="./ver-funcionarios.html">Ver Funcionários</a>
+          <a href="./ver-produtos.html">Ver Produtos</a>
+        </section>
+      </nav>
+    </header>
+
+    <main class="product">
+      <section class="product__image">
+        <div class="product__image--all">
+          <img
+            src="./img/produto1.png"
+            data-model="black"
+            class="product__image--highlight"
+          />
+          <img src="./img/produto2.png" data-model="blue" />
+          <img src="./img/produto3.png" data-model="green" />
+          <img src="./img/produto4.png" data-model="gray" />
+          <img src="./img/produto5.png" data-model="pink" />
+        </div>
+
+        <div class="product__image--selected">
+          <img src="./img/produto1.png" />
+        </div>
+      </section>
+
+      <section class="product__info">
+        <section class="product__info--details">
+          <h2>Camisa para Desenvolvedor Front-End CSS</h2>
+          <strong>R$ 56,90</strong>
+          <small>171 peças disponíveis</small>
+        </section>
+
+        <form class="product__info--options">
+          <div
+            id="product-models-options"
+            class="product__info--option option-select"
+          >
+            <label for="model">Modelo</label>
+            <div class="option-select__options">
+              <label class="radio" for="black-model" data-model="black">
+                <input type="radio" name="model" id="black-model" />
+                Preto
+              </label>
+              <label class="radio" for="blue-model" data-model="blue">
+                <input type="radio" name="model" id="blue-model" />
+                Azul
+              </label>
+              <label class="radio" for="green-model" data-model="green">
+                <input type="radio" name="model" id="green-model" />
+                Verde
+              </label>
+              <label class="radio" for="gray-model" data-model="gray">
+                <input type="radio" name="model" id="gray-model" />
+                Cinza
+              </label>
+              <label class="radio" for="pink-model" data-model="pink">
+                <input type="radio" name="model" id="pink-model" />
+                Rosa
+              </label>
+            </div>
+          </div>
+          <div
+            id="product-sizes-options"
+            class="product__info--option option-select"
+          >
+            <label for="size">Tamanho</label>
+            <div class="option-select__options">
+              <label class="radio" for="p-size" data-size="P">
+                <input type="radio" name="size" id="p-size" />
+                P
+              </label>
+              <label class="radio" for="m-size" data-size="M">
+                <input type="radio" name="size" id="m-size" />
+                M
+              </label>
+              <label class="radio" for="g-size" data-size="G">
+                <input type="radio" name="size" id="g-size" />
+                G
+              </label>
+              <label class="radio" for="gg-size" data-size="GG">
+                <input type="radio" name="size" id="gg-size" />
+                GG
+              </label>
+            </div>
+
+            <small>Tamanho Selecionado: <span></span></small>
+          </div>
+
+          <section class="product__info--confirm">
+            <button class="btn btn-primary">Comprar agora</button>
+          </section>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__content">
+        <section class="footer__links">
+          <section class="footer__links--column">
+            <h4>Atendimento ao cliente</h4>
+
+            <div class="footer__links--list">
+              <a href="#">Central de Ajuda</a>
+              <a href="#">Como Comprar</a>
+              <a href="#">Métodos de Pagamento</a>
+              <a href="#">Garantia Xhopii</a>
+              <a href="#">Devolução e Reembolso</a>
+              <a href="#">Fale Conosco</a>
+              <a href="#">Ouvidoria</a>
+            </div>
+          </section>
+          <section class="footer__links--column">
+            <h4>Sobre a Xhopii</h4>
+
+            <div class="footer__links--list">
+              <a href="#">Sobre Nós</a>
+              <a href="#">Políticas Xhopii</a>
+              <a href="#">Políticas de Privacidade</a>
+              <a href="#">Programa de Aliados da Xhopii</a>
+              <a href="#">Seja um Entregador Xhopii</a>
+              <a href="#">Ofertas Relâmpagos</a>
+              <a href="#">Xhopii Blog</a>
+              <a href="#">Empresa</a>
+            </div>
+          </section>
+          <section class="footer__links--column">
+            <h4>Pagamento</h4>
+
+            <div class="footer__links--list">
+              <!-- Colocar os métodos de pagamento -->
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+          </section>
+          <section class="footer__links--column">
+            <h4>Siga-Nos</h4>
+
+            <div class="footer__links--list">
+              <!-- Colocar as redes sociais -->
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
+              <a href="#">Facebook</a>
+              <a href="#">YouTube</a>
+              <a href="#">Linkedin</a>
+            </div>
+          </section>
+          <section class="footer__links--column">
+            <h4>Atendimento ao Cliente</h4>
+
+            <div class="footer__links--list">
+              <!-- Colocar o necessário -->
+              <img src="./img/qr-code.png" alt="QR-Code para atendimento" />
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+          </section>
+        </section>
+
+        <hr />
+
+        <section class="footer__copyright">
+          <p>© 2023 Xhopii. Todos os direitos acadêmicos reservados.</p>
+        </section>
+      </section>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="./js/pages/producto-selecionado.js"
+    ></script>
+    <script type="text/javascript">
+      const product = new ProductInfo(
+        "Camisa para Desenvolvedor Front-End CSS",
+        [
+          { modelName: "black", price: "R$ 56,90", totalAvailable: 171 },
+          { modelName: "blue", price: "R$ 60,00", totalAvailable: 249 },
+          { modelName: "green", price: "R$ 50,44", totalAvailable: 66 },
+          { modelName: "gray", price: "R$ 90,15", totalAvailable: 88 },
+          { modelName: "pink", price: "R$ 56,90", totalAvailable: 0 },
+        ],
+        ["P", "M", "G", "GG"]
+      );
+
+      allProductImageEl.forEach((img) => {
+        img.addEventListener("click", () => product.handleSelectModel(img));
+      });
+      allModelsRadioEl.forEach((modelRadio) => {
+        modelRadio.addEventListener("click", () =>
+          product.handleSelectModel(modelRadio)
+        );
+      });
+      allSizeRadioEl.forEach((sizeRadio) => {
+        sizeRadio.addEventListener("click", () =>
+          product.handleSelectSize(sizeRadio)
+        );
+      });
+    </script>
+  </body>
+</html>
