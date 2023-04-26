@@ -1,0 +1,42 @@
+.barra-menu1{
+    background-color: orange;
+    width: 100%;
+    height: 50px;
+}
+
+.nome{
+    display: flex;
+    justify-content: start;
+    /* align-items: flex-start; */
+}
+
+.sair{
+    display: flex;
+    justify-content: end;
+}
+
+.barra-menu2{
+    background-color: yellow;
+    width: 100%;
+    height: 35px;
+}
+
+.barra-menu2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.barra-menu2 li{
+    justify-content: space-between;
+}
+
+form{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
