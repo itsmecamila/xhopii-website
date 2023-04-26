@@ -1,0 +1,82 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  max-width: 1100px;
+  margin: 48px auto;
+}
+
+.product__image {
+  display: flex;
+}
+
+.product__image .product__image--all {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product__image .product__image--all img {
+  width: 125px;
+  aspect-ratio: 1;
+
+  border: 2px solid transparent;
+
+  cursor: pointer;
+}
+
+.product__image .product__image--selected img {
+  width: 500px;
+}
+
+.product__image .product__image--all .product__image--highlight {
+  border-color: orangered;
+}
+
+.product__info .product__info--details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product__info .product__info--details strong {
+  font-size: 24px;
+  color: orangered;
+}
+
+.product__info .product__info--options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+.product__info .product__info--option {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radio {
+  display: inline-block;
+  padding: 8px 16px;
+
+  border: 2px solid lightgray;
+
+  cursor: pointer;
+}
+
+.radio > input {
+  position: absolute;
+  left: -9999%;
+}
+
+.radio:has(:checked) {
+  border-color: orangered;
+  color: orangered;
+}
+
+.radio:has(:focus) {
+  border-color: orangered;
+}
