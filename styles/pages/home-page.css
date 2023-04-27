@@ -1,5 +1,9 @@
 main{
-    margin: 0 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    margin: 64px 128px;
 }
 
 .todos-cards{
@@ -9,10 +13,12 @@ main{
 }
 
 .card{
-    box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
     display: flex;
     flex-direction: column;
+    padding: 4px;
     gap: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.1);
+    border: none;
 }
 
 .card img{
@@ -40,4 +46,14 @@ main{
 
 .banner2 img{
     width: 100%;
+}
+
+.imagens h1{
+    text-align: center;
+    color: orangered;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 4px solid rgba(255, 69, 0,0.35 );
 }

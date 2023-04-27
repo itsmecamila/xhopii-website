@@ -27,6 +27,7 @@
 .btn-primary {
   color: white;
   background-color: orangered;
+  width: 100%;
 }
 
 .btn-secundary {
@@ -50,6 +51,23 @@
 .input {
   padding: 12px 16px;
   border: 2px solid #d4d4d8;
+  width: 100%;
+}
+
+.input.input-file {
+  border: none;
+}
+
+.input.input-file::-webkit-file-upload-button,
+.input.input-file::file-selector-button {
+  padding: 8px 16px;
+  margin-right: 16px;
+
+  color: orangered;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  
+  background-color: transparent;
 }
 
 /* Logo da Xhopii */
@@ -109,6 +127,15 @@
   justify-content: space-between;
 }
 
+.header:not(.header--unsigned) .logo strong {
+  color: white;
+}
+
+.header:not(.header--unsigned) .header__content--right .header__right--help{
+  color: white;
+  font-weight: bold;
+}
+
 .header:not(.header--unsigned) .header__content {
   padding: 8px 24px;
 }
@@ -147,6 +174,41 @@
   filter: brightness(0.9);
 }
 
+form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.forms{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  margin: 30px;
+  width: 500px;
+  padding: 30px 70px;
+
+  border-radius: 8px;
+
+  background-color: white;
+}
+
+.forms h1 {
+  color: orangered;   
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.select--imgProduct{
+  color: orangered;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
 /* Footer */
 .footer {
   padding: 50px 0;
@@ -168,6 +230,7 @@
 	justify-content: space-between; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 14px
 }
 
 .footer__links--column h4 {
@@ -194,7 +257,18 @@
   max-width: 110px;
 }
 
+.footer__links--column .footer__links--list.footer__links--payments {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
 .footer__copyright {
   color: #27272a;
   text-align: center;
+}
+
+.icon svg,
+.icon img {
+  height: 16px;
 }
