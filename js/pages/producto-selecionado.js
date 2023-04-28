@@ -5,6 +5,7 @@ const allModelsRadioEl = document.querySelectorAll(
 const allSizeRadioEl = document.querySelectorAll(
   "#product-sizes-options label"
 );
+const productImageSelectedEl = document.querySelector(".product__image--selected img");
 
 const productNameElement = document.querySelector(".product__info--details h2");
 const productPriceElement = document.querySelector(
@@ -62,6 +63,8 @@ class ProductInfo {
     document
       .querySelector(`.product__image--all img[data-model="${modelName}"]`)
       .classList.add("product__image--highlight");
+    
+    productImageSelectedEl.src = model.image;
   }
 
   handleSelectSize(element) {
