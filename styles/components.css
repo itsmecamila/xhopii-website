@@ -234,6 +234,8 @@
 }
 
 .footer__links--column h4 {
+  font-size: medium;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -268,7 +270,16 @@
   text-align: center;
 }
 
-.icon svg,
-.icon img {
-  height: 16px;
+.icon.icon--md :is(svg, img) {
+  height: 20px;
+}
+
+.icon.icon--lg :is(svg, img) {
+  height: 24px;
+}
+
+.icon.icon--text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
